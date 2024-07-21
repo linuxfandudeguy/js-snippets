@@ -1,0 +1,1 @@
+function base64EncodeNonLatin(n){const e=(new TextEncoder).encode(n);let o="";for(let n of e)o+=String.fromCharCode(n);return btoa(o)}const input="こんにちは",base64Encoded=base64EncodeNonLatin(input);console.log(`Base64 Encoded: ${base64Encoded}`);
